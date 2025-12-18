@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 포트폴리오 | My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    
+    <style>
+        /* 커스텀 스타일 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            padding-top: 56px; /* 네비게이션 바 높이만큼 여백 */
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/1600x900/?office,desk');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .section-padding {
+            padding: 80px 0;
+        }
+        .profile-img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #f8f9fa;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .card {
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        /* (선택사항) 데스크탑에서 마우스 올렸을 때 드롭다운 열리게 하기 */
+        @media (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light" id="mainNav" style="position: absolute; top: 0; width: 100%; z-index: 1000;">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="index.html">Title</a>
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="sub1.html">A.D</a></li>
+                <li class="nav-item"><a class="nav-link" href="sub2.html">B.D</a></li>
+                <li class="nav-item"><a class="nav-link" href="sub3.html">V.D</a></li>
+                <li class="nav-item"><a class="nav-link" href="sub4.html">E.D</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  
+
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center mb-4 mb-md-0">
+                    <img src=assets/img/9890.jpg alt="프로필 사진" class="profile-img">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="fw-bold mb-4">Brand Package Design</h2>
+                    <p class="lead text-muted">"Rebranding & creating my own brand and product design."</p>
+                    <p>
+                        패키지는 단순한 포장을 넘어, 소비자가 브랜드를 만나는 첫 번째 접점이자 통합적인 경험입니다. 저는 제품의 본질과 타겟의 취향을 반영하여, 진열대 위에서 확실히 차별화되고 브랜드의 고급스러운 가치를 높이는 디자인을 완성합니다.
+                    </p>
+                    <!--
+                    <hr class="my-4">
+                    <h5 class="fw-bold mb-3">🛠 기술 스택</h5>
+                    <div>
+                        <span class="badge bg-primary fs-6 me-1 mb-1">HTML5</span>
+                        <span class="badge bg-primary fs-6 me-1 mb-1">CSS3</span>
+                        <span class="badge bg-warning text-dark fs-6 me-1 mb-1">JavaScript</span>
+                        <span class="badge bg-info text-dark fs-6 me-1 mb-1">React</span>
+                        <span class="badge bg-success fs-6 me-1 mb-1">Node.js</span>
+                        <span class="badge bg-secondary fs-6 me-1 mb-1">Git</span>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Project</h2>
+                <p class="text-muted">제가 직접 기획하고 개발한 프로젝트들입니다.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+        <img src="assets/img/vawe.png" class="card-img-top" alt="Wave Haus">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">공간디자인&브랜딩</h5>
+            <p class="card-text">음악인을 위한 공간을 만들고, 브랜드 디자인</p>
+            <span class="badge bg-light text-dark border">Music</span>
+            <span class="badge bg-light text-dark border">Wave Haus</span>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+            <button type="button" class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#pdfModal">
+                자세히 보기
+            </button>
+        </div>
+    </div>
+</div>
+
+                <div class="col-md-4">
+    <div class="card h-100 shadow-sm">
+        <img src="assets/img/bac.png" class="card-img-top" alt="패턴 디자인">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">패턴디자인</h5>
+            <p class="card-text">패턴을 디자인, 패턴을 활용한 제품디자인</p>
+            <span class="badge bg-light text-dark border">Pattern</span>
+            <span class="badge bg-light text-dark border">Product</span>
+        </div>
+        <div class="card-footer bg-white border-top-0">
+            <button type="button" class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="modal" data-bs-target="#patternModal">
+                자세히 보기
+            </button>
+        </div>
+    </div>
+</div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+3" class="card-img-top" alt="프로젝트3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">준비중</h5>
+                            <p class="card-text">준비중 입니다.</p>
+                            <span class="badge bg-light text-dark border">API</span>
+                            <span class="badge bg-light text-dark border">Chart.js</span>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+     <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+1" class="card-img-top" alt="프로젝트1">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">none
+                            <p class="card-text">none</p>
+                            <span class="badge bg-light text-dark border">React</span>
+                            <span class="badge bg-light text-dark border">Redux</span>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+2" class="card-img-top" alt="프로젝트2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">none</h5>
+                            <p class="card-text">none</p>
+                            <span class="badge bg-light text-dark border">JavaScript</span>
+                            <span class="badge bg-light text-dark border">CSS</span>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+3" class="card-img-top" alt="프로젝트3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">none</h5>
+                            <p class="card-text">none</p>
+                            <span class="badge bg-light text-dark border">API</span>
+                            <span class="badge bg-light text-dark border">Chart.js</span>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+1" class="card-img-top" alt="프로젝트1">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">none</h5>
+                            <p class="card-text">none</p>
+                            <span class="badge bg-light text-dark border">React</span>
+                            <span class="badge bg-light text-dark border">Redux</span>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+2" class="card-img-top" alt="프로젝트2">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">none</h5>
+                            <p class="card-text">none</p>
+                            <span class="badge bg-light text-dark border">JavaScript</span>
+                            <span class="badge bg-light text-dark border">CSS</span>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://dummyimage.com/600x400/ced4da/6c757d.jpg&text=Project+3" class="card-img-top" alt="프로젝트3">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">none</h5>
+                            <p class="card-text">none</p>
+                            <span class="badge bg-light text-dark border">API</span>
+                            <span class="badge bg-light text-dark border">Chart.js</span>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+   <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">
+            Email : rjsgml12333@gmail.com
+            <br>Copyright &copy; Your Website 2050</div></footer>
+    <style>
+        footer{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+         <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pdfModalLabel">WAVE HAUS - Project Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="height: 80vh; overflow-y: auto; padding: 0;">
+                <img src="assets/img/OoO333.png" style="width: 100%; height: auto; display: block;" alt="Wave Haus 상세 이미지">
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal fade" id="patternModal" tabindex="-1" aria-labelledby="patternModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="patternModalLabel">패턴 디자인 - Project Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="height: 80vh; overflow-y: auto; padding: 0;">
+                <img src="assets/img/OoO11.png" style="width: 100%; height: auto; display: block;" alt="패턴 디자인 상세 이미지">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
